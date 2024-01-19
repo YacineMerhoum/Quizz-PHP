@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+body {
+    background-color: black;
+    color:white;
+    font-family: "Irish Grover", system-ui;
+    
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 5%;
+}
+
+.inputs {
+    margin-top: 10%;
+}
+
+.bgnav {
+    background-color: rgba(128, 128, 128, 0.237);
+}
+
+.login {
+    margin-left: 900px;
+    margin-top: 10px;
+}
+
+.animate-title {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 2.5s ease, transform 0.5s ease;
+}
+
+.animate-title.active {
+    opacity: 1;
+    transform: translateX(0);
+    
+}
+
+
+
+/* ANIMATION */
+.animation {
+    opacity: 1;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 1.5s ease;
+    margin-right: 15%;
+}
+
+.animation.go {
+    opacity: 0;
+    transform: translateX(100%);
+}
+.marginbutton {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.inputs {
+    margin-left: 10%;
+}
+
+
+
+/* boutons de l'accueil */
+.zoom-button3 { 
+  margin-top: 15%;  
+  margin-left: 25%;
+  
+  height: 50%;
+  width: 50%;
+  transition: transform 0.3s; 
+}
+
+.zoom-button3:hover {
+  transform: scale(2.0); 
+}
+
+
+/* agrandissement du mess error */
+.error {
+  font-size: 45px;
+
+}
+
+.zoom-button {
+    
+    transition: transform 0.3s; 
+  }
+  
+  .zoom-button:hover {
+    transform: scale(2.5); 
+  }
+
+  .zoom-button2 {
+    
+    transition: transform 0.3s; 
+  }
+  
+  .zoom-button2:hover {
+    transform: scale(1.5); 
+  }
+
+  .animnav {
+    
+    transition: transform 0.3s; 
+  }
+  
+  .animnav:hover {
+    transform: scale(1.1); 
+  } 
+
+
+  .beat-element {
+    animation: beatAnimation 2s infinite alternate;
+    font-size: 2rem;
+  }
+  
+  @keyframes beatAnimation {
+      0% {
+          transform: scale(1);
+      }
+      100% {
+          transform: scale(1.1);
+      }
+  }
+  
+
+/* flame animation */
+/* SVG FIRE */
+
+
+/* result in the bootstrap card */
+.cardresult {
+  font-size: 60px;
+}
+.cards {
+  background-color: gray;
+  border-radius: 5%;
+}
+a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+.beat-seconds {
+  animation: beatseconds 2s infinite alternate !important;
+  /* font-size: 3.5rem !important; */
+}
+
+@keyframes beatseconds {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2.5);
+    }
+}
